@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 :root {
     --primary-brand: #4D5AE5;
     --dark: #2E2F42;
@@ -20,12 +30,17 @@ body {
     background-color: #FFFFFF;
 }
 
+.conteiner {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
 .header-conteiner {
     display: flex;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    
+        
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -61,7 +76,8 @@ body {
 .navigation {
     display: flex;
     list-style-type: none;
-    margin-left: 77px; 
+    margin-left: 77px;
+    padding: 0; 
 }
 
 .navigation-li:not(:last-child) {
@@ -83,10 +99,6 @@ body {
     
 }
 
-
-
-
-
 .list-navigation:hover, 
 .list-navigation:focus {
     color: var(--text);
@@ -102,6 +114,7 @@ body {
     display: flex;
     list-style-type: none;
     margin-left: auto;
+    padding: 0;
     
 }
 
@@ -122,12 +135,14 @@ margin-right: 40px;
     color: var(--primary-brand);
 }
 
-/* section-button */
+/* section-hero */
 
-.button {
+.hero {
     background-color: var(--dark);
     text-align: center;
-    width: 1128px;
+    padding-top: 172px;
+    padding-bottom: 192px;
+
 }
 
 .solutions {
@@ -138,12 +153,8 @@ margin-right: 40px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     
-    margin-top: 0px;
-    margin-bottom: 64px;
-    padding-top: 172px;
-    padding-right: 15px;
-    padding-left: 15px;
-    
+    margin-bottom: 48px;
+        
 }
 
 .contained {
@@ -152,15 +163,13 @@ margin-right: 40px;
     background: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border-color: #4D5AE5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    cursor: pointer;
-
-    margin-bottom: 192px;
-           
+    cursor: pointer;           
 }
 
 .contained:hover,
@@ -178,12 +187,16 @@ margin-right: 40px;
 
 /* section-advanteges */
 
+.advanteges {
+    padding-top: 120px;
+
+}
+
 .list-pluses{
     list-style-type: none;
     display: flex;
-    padding-top: 120px;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
 }
 
 .list-pluses-li:not(:last-child) {
@@ -197,8 +210,8 @@ margin-right: 40px;
     letter-spacing: 0.02em;
     color: var(--dark);
 
-    margin: 0;
-    flex-basis: calc((100%-3*24px)/4);
+    margin: 0 0 8px 0;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .list-advanteges {
@@ -208,7 +221,6 @@ margin-right: 40px;
     color: var(--text);
 
     margin: 0;
-    padding-top: 8px;
 }
 
 .visually-hidden {
@@ -225,6 +237,10 @@ margin-right: 40px;
   } 
 
 /* section-our-work and team*/
+.types-jobs{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .title {
     font-weight: 700;
@@ -236,7 +252,7 @@ margin-right: 40px;
     color: var(--dark);
 
     margin: 0 0 72px;
-    padding-top: 120px;
+    
 }
 
 
@@ -245,10 +261,11 @@ margin-right: 40px;
     display: flex;
 
     margin: 0;
+    padding: 0;
 }
 
 .list-images-li{
-    flex-basis: calc((100%-2*24px)/3);
+    flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .list-images-li:not(:last-child) {
@@ -260,15 +277,13 @@ margin-right: 40px;
   display: flex;
 
   margin: 0;
-  padding-left: 0;
-  padding-bottom: 120px;
-
-}
+  padding: 0;
+  }
 
 .team{
     background: var(--light);
-
-    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-item{
@@ -276,13 +291,17 @@ margin-right: 40px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 
-    flex-basis: calc((100%-3*24px)/4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .team-item:not(:last-child) {
     margin-right: 24px;
 }
 
+.team-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .list-names {
     font-weight: 700;
@@ -291,7 +310,6 @@ margin-right: 40px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark);
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -303,23 +321,23 @@ margin-right: 40px;
     color: var(--text);
 
     margin: 0;
-    padding-bottom: 32px;
 }
 
 
 
 /* portfolio: section button*/
 
+.portfolio{
+padding-top: 96px;
+padding-bottom: 120px;
+}
+
 .list-btn {
     display: flex;
     justify-content: center;
 
     list-style-type: none;
-    padding-top: 108px;
-    padding-bottom: 72px;
-    margin: 0;
-    padding-left: 0;
-     
+    margin-bottom: 72px;
 
 }
 
@@ -367,24 +385,31 @@ margin-right: 40px;
     column-gap: 24px;
     row-gap: 48px;
     justify-content: center;
-    margin: 0;
-    padding-left: 0;
-
-
+    
     list-style-type: none;
 }
 
 .list-li {
     background: #FFFFFF;
-    border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    /* border: 0.5px solid #F4F4FD; */
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
 
-    flex-basis: calc((100%-3*24px)/4);
+   
+    flex-basis: calc((100% - 48px) / 3);
+
+    
     
 }
 
 .portfolio-items{
     text-decoration: none;
+}
+
+.portfolio-conteiner {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 0.5px solid #F4F4FD; 
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .list-portfolio{
@@ -394,7 +419,7 @@ margin-right: 40px;
     letter-spacing: 0.02em;
     color: var(--dark);
 
-    margin-top: 32px;
+    
     margin-bottom: 8px;
     padding-left: 16px;
 }
@@ -406,17 +431,17 @@ margin-right: 40px;
     color: var(--text);
 
     margin: 0;
-    padding-bottom: 32px;
+    
     padding-left: 16px;
 }
 
 
 /* footer */
 
-.bottom{
+.footer {
     background: var(--dark);
-    width: 1440px;
-    padding: 100px 1020px 100px 156px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-bottom {
@@ -448,5 +473,6 @@ margin-right: 40px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--accent)
+    color: var(--accent);
+    margin-top: 16px;
 }
