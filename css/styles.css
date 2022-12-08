@@ -153,7 +153,7 @@ margin-right: 40px;
 .hero {
     background-color: var(--dark);
     text-align: center;
-    padding-top: 172px;
+    padding-top: 192px;
     padding-bottom: 192px;
 
 }
@@ -176,7 +176,7 @@ margin-right: 40px;
     background: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border-color: #4D5AE5;
+    border-color: transparent;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -499,16 +499,11 @@ padding-bottom: 120px;
     
 }
 
-.footer-logo-reason {
-    padding-left: 156px;
-}
-
 .reason{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent);
     margin-top: 16px;
-
     
 }
